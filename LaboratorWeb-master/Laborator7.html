@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	<title></title>
+</head>	
+<body>
+	<div id="myBox" style="height: 30px; width: 100px; background: lightgrey; margin-left: 0px;border: solid red 5px;"></div><br>
+
+	<div style="float: left;">
+		<button id="buLeft" >left</button>
+		<button id="buRight">Right</button>            
+	</div>
+	
+	<script type="text/javascript">
+		'use strict'
+
+		//   ex 1
+		var a = 1;
+		function b() {
+			a = 10;
+			return;
+ //HINT: local scope
+		}
+		b();
+		console.log('a=' + a);
+
+		// ex 2
+
+		for (var i = 0; i < 5; i++) {
+			setTimeout(console.log(i), i * 1000 );
+		}// function is displayed after timeout
+
+		// ex 3
+
+		
+			setTimeout(function(){
+				try {
+				throw new Error('example');
+				} catch (err) {
+					console.log(err)
+					}	
+				}, 1000);
+
+		// ex4
+	// es5
+		function Animal(type, color) {
+			this.type = type;
+			this.color = color;
+			getColor = function() {
+			return this.color;
+			}
+		}
+		function Fish(fishType) {
+			Animal.call(fishType, 'blue');
+			getFishType = function() {
+				return Animal.getType();
+			}
+		}
+		function Dog(dogType) {
+			Animal.call(dogType, 'brown');
+			getDogType = function() {
+				return Animal.getType();
+			}
+		}
+		function DogType(typeName, furColor) {
+			Dog.call(typeName);
+			this.furColor = furColor;
+			getFurColor = function() {
+				return this.furColor;
+			}
+		}
+	// es6
+		class Animal1 {
+			constructor(type, color) {
+				this.color = color;
+				this.type = type;
+			}
+			getColor() {
+				return this.color;
+			}
+		}
+		class Fish1 extends Animal1 {
+			constructor(fishType) {
+				super(fishType, 'blue');
+			}
+			getFishType() {
+				return super.type;
+			}
+		}
+		class Dog1 extends Animal1 {
+			constructor(dogType) {
+				super(dogType, 'brown');
+			}
+			getDogType() {
+				return super.type;
+			}
+		}
+		class DogType1 extends Dog1 {
+			constructor(typeName, furColor) {
+				super(typeName);
+				this.furColor = furColor;
+			}
+			getFurColor() {
+				return this.furColor;
+			}
+		}
+
+		// Ex5
+		function blocking() {
+			setTimeout(() =>{
+				let a = 0;
+				for (let i = 0; i < 1000; i++) {
+					for(let j = 0; j < i * 10000; j++) {
+						if (i < j) {
+							a++;
+						}
+					}
+				}
+			},1000);
+		    console.log('Blocked?  a = '+a)
+		 }
+			
+
+		// ex6
+
+		var box = document.getElementById("myBox");
+		var boxMargin=0;
+		var w = window.innerWidth-150;
+		
+		
+		
+		document.getElementById("buLeft").addEventListener("click", function() {
+			
+				if(boxMargin < w){
+					var newMargin = boxMargin - 20;
+					boxMargin = newMargin;
+					box.style.marginLeft = newMargin.toString() + 'px';
+				}
+			});			
+		document.getElementById("buRight").addEventListener("click", function() {
+				
+				if(boxMargin < w){
+					var newMargin = boxMargin + 20;
+					boxMargin = newMargin;
+					box.style.marginLeft = newMargin.toString() + 'px';
+				}
+			
+			});
+		
+
+
+
+
+
+
+</script>
+</body>
+</html>

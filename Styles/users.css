@@ -1,0 +1,44 @@
+#he1 {
+	background-color: #666;
+	padding: 30px;
+	margin: 0px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 50;
+    width: inherit;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+/*  coloreaza fiecare rand separat de celalalt dupa rand par sau impar  */
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}

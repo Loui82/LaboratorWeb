@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My web page</title>
+	<link rel="stylesheet" type="text/css" href="/home/loui8/Desktop/LaboratorWeb/Styles/index.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Welcome to my site</h1>
+	</div>
+	<ul>
+	    <li><a href="/home/loui8/Desktop/LaboratorWeb/Html/index.html">Home</a></li>
+  		<li><a href="/home/loui8/Desktop/LaboratorWeb/Html/profile.html">Profile</a></li>
+  	    <li><a href="/home/loui8/Desktop/LaboratorWeb/Html/users.html">Users</a></li>
+        <li><a href="/home/loui8/Desktop/LaboratorWeb/Html/contact.html">Contact</a></li>
+        <li><a onclick="openForm()">Login</a></li>
+    </ul>
+    <div class="form-popup" id="PForm">
+        <form action="#" class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+        document.getElementById("PForm").style.display = "block";
+        }
+
+        function closeForm() {
+        document.getElementById("PForm").style.display = "none";
+        }
+    </script>
+
+    <div class="bmw">
+    <h1>One of my favourite bikes</h1>
+    <a href="https://www.bmwmotorcycles.com/en/models/heritage/rninetscrambler.html#/section-experience-the-sound-of-the-r-nine-t-scrambler" target="_blank"><img src="/home/loui8/Desktop/LaboratorWeb/Resources/BMW.jpeg" alt="bmw bike" title="go to bike description" ></a></div>
+    <div class="wiki">
+    <h2>BMW pre-1921</h2>
+    <p>BMW began in 1916 as a reorganization of <span>Rapp Motorenwerke</span>, an aircraft engine manufacturer that began production before World War I. With the Armistice, the Treaty of Versailles banned the German air force and the manufacture of aircraft in Germany, so the company turned to making air brakes, industrial engines, agricultural machinery, toolboxes and office furniture and then to motorcycles and cars. </p>
+    <a href="https://en.wikipedia.org/wiki/History_of_BMW_motorcycles"><img src="/home/loui8/Desktop/LaboratorWeb/Resources/BMW1.jpeg" alt="old BMW" title="go to wikipedia"></a>
+	</div>
+
+    <div class="wiki2">
+        <h2>1921-1945</h2>
+        <blockquote cite="https://en.wikipedia.org/wiki/History_of_BMW_motorcycles">
+        <p>In 1921, <strong><em>BMW</em></strong> began manufacture of its M2B15 flat-twin engine. Designed by Max Friz for use as a portable industrial engine, the M2B15 was largely used by motorcycle manufacturers, notably Victoria of Nuremberg, and Bayerische Flugzeugwerke in their Helios motorcycle.[1][2] Friz was also working on car engines.
+        </p><p>
+         <strong><em>BMW</em></strong> merged with Bayerische Flugzeugwerke in 1922, inheriting from them the Helios motorcycle and a small two-stroke motorized bicycle called the Flink. In 1923, BMW's first in line crank with two horizontally opposed air cooled cylinders boxer engine was designed by Friz. The R32 had a 486 cc (29.7 cubic inches) engine with 8.5 hp (6.3 kW) and a top speed of 95 to 100 km/h (59 to 62 mph). The engine and gearbox formed a bolt-up single unit. At a time when many motorcycle manufacturers used total-loss oiling systems, the new BMW engine featured a recirculating wet sump oiling system with a drip feed to roller bearings. This system was used by BMW until 1969, when they adopted the "high-pressure oil" system based on shell bearings and tight clearances, still in use today.
+        </p><p>
+        The R32 became the foundation for all future boxer-powered <strong><em>BMW</em></strong> motorcycles. BMW oriented the boxer engine with the cylinder heads projecting out on each side for cooling as did the earlier British ABC. Other motorcycle manufacturers, including Douglas and Harley-Davidson, aligned the cylinders with the frame, one cylinder facing towards the front wheel and the other towards the back wheel. The R32 also incorporated shaft drive. BMW has continued to use shaft drive on its motorcycles and did not produce a chain driven model until the introduction of the F650 in 1994.
+        BMW R2, a 200cc single-cylinder BMW motorcycle. The first single-cylinder BMW was the 1925 R39.
+        </p><p id="1">
+        In 1925, <strong><em>BMW</em></strong> introduced the R39, a 250 cc single-cylinder motorcycle. It was not successful and was discontinued in 1927. In 1931, <strong><em>BMW</em></strong> introduced the single-cylinder shaft-driven R2, which, as a 200 cc motorcycle, could be operated in Germany without a motorcycle licence at that time. The R2 headed a series of single-cylinder <strong><em>BMW</em></strong> motorcycles, including the 400 cc R4 in 1932 and the 300 cc R3 in 1936. </p>
+        </blockquote>
+    </div>
+	
+ 	<footer><p>Created by <i>Matyus Lajos</i></p></footer>
+    
+
+</body>
+</html>

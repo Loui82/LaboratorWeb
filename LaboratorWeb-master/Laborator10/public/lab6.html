@@ -1,0 +1,71 @@
+!DOCTYPE html>
+<html>
+<head>
+	<title>Lab6</title>
+	<script src="../lab6.js"></script>
+</head>
+<body>
+
+	<form action="">
+		<h2>Reverse text</h2>
+		<input type="text" id="myText" >
+		<br>
+		<button type="button" onclick="alert(reverseString())">Reverse!</button>
+	
+	<hr>
+	
+		<h2>Extract char</h2>
+		<p>enter text</p>
+		<input type="text" id="myText1" >
+		<br>
+		<p>enter position(integer) to extract, count from 0</p>
+		<input type="number" id="myText2" >
+		<br>
+		<button type="button" onclick="alert(extractString())">Extract!</button>
+	
+	<hr>
+	
+		<h2>Check number if is divisible with 3 or 7</h2>
+		<p>enter the number</p>
+		<input type="number" id="numb" >
+		<br>
+		<button type="button" onclick="alert(divisibleMy(numb.value))">Check!</button>
+
+	<hr>
+
+		<h2>Check variable if is number</h2>
+		<p>enter something</p>
+		<input type="text" id="numb1" >
+		<br>
+		<button type="button" onclick="alert(isNumber(numb1.value))">Check!</button>
+
+	<hr>
+
+		<h2>Calculate the sum of numbers in an array</h2>
+		<br>
+		<button type="button" onclick="alert(calculateSum())">Check!</button>
+
+	<hr>
+
+		<h2>Check object given property</h2>
+		<br>
+		<p>we have a object with the properties <i>red, green, white</i> with the same values, enter a color to check if our object contains it</p>
+		<input type="text" id="color" >
+		<br>
+		<button type="button" onclick="alert(checkObject(color.value))">Check!</button>
+
+	<hr>
+
+		<h2>Convert arabic number to roman number</h2>
+		<br>
+		<p>Enter number</p>
+		<input type="number" id="numb2" >
+		<br>
+		<button type="button" onclick="alert(toRoman(numb2.value))">Check!</button>
+
+	<hr>
+	</form>
+	
+
+</body>
+</html>

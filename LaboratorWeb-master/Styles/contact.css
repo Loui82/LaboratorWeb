@@ -1,0 +1,65 @@
+#he1 {
+	background-color: #666;
+	padding: 30px;
+	margin: 0px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 50;
+    width: inherit;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.parallax {
+    /* The image used */
+    background-image: url("/home/loui8/Desktop/LaboratorWeb/Resources/BMW2.jpeg");
+
+    /* Set a specific height */
+    height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url("/home/loui8/Desktop/LaboratorWeb/Resources/BMW3.jpg");
+
+    /* Set a specific height */
+    height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body p {
+    margin: 0px;
+    padding: 30px;
+    height: 100px;
+    background-color: #666;
+    font-size: 25px;
+    border: 2px solid black;
+    padding: 10px;
+    
+}

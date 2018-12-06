@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab9</title>
+	<script src="lab6.js"></script>
+	<script>
+function lab6() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "lab6.html", true);
+  xhttp.send();
+}
+
+</script>
+</head>
+<html>
+<body>
+
+<div id="demo">
+<h2>On button press XMLHttpRequest object going to get my lab6 html content </h2>
+<button type="button" onclick="lab6()">get lab6</button>
+</div>
+
+
+
+</body>
+</html>
